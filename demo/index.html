@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mailto Obfusction Demo</title>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="/js/jquery.mailtoobfuscate.my.js"></script>
+    <script>
+        var options = [
+            {
+                "address": "John.Doe",
+                "domain": "gmail",
+                "toplevel": "com",
+                "subject": "Kontakt Responsive, Keepitnative-Website",
+                "body": "\r\n"
+            },
+            {
+                "address": "mrxy",
+                "domain": "gmail",
+                "toplevel": "com",
+                "subject": "Kontakt Responsive, Keepitnative-Website",
+                "body": "\r\n"
+            },
+
+        ];
+$(document).ready( function() {
+    $('#email-anyID, #email-secondID, .className').mailtoobfuscate_my(options);
+});
+    </script>
+</head>
+<body>
+<h2>Mailto Obfuscation Demo</h2>
+<span id="email-anyID"></span>
+<span id="email-secondID"></span>
+<span class="className"></span>
+</body>
+</html>

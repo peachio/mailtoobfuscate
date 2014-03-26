@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mailtoobfuscate My Test Suite</title>
+  <!-- Load local jQuery. This can be overridden with a ?jquery=___ param. -->
+  <script src="../libs/jquery-loader.js"></script>
+  <!-- Load local QUnit. -->
+  <link rel="stylesheet" href="../libs/qunit/qunit.css" media="screen">
+  <script src="../libs/qunit/qunit.js"></script>
+  <!-- Load local lib and tests. -->
+  <script src="../src/jquery.mailtoobfuscate.my.js"></script>
+  <script src="mailtoobfuscate.my_test.js"></script>
+  <!-- Removing access to jQuery and $. But it'll still be available as _$, if
+       you REALLY want to mess around with jQuery in the console. REMEMBER WE
+       ARE TESTING A PLUGIN HERE, THIS HELPS ENSURE BEST PRACTICES. REALLY. -->
+  <script>
+
+      window._$ = jQuery.noConflict(true);
+      var options = [
+          {
+              "address": "7starch",
+              "domain": "gmail",
+              "toplevel": "com",
+              "subject": "Kontakt Responsive, Keepitnative-Website",
+              "body": "\r\n"
+          },//new Address separated via comma
+          {
+              "address": "7starch",
+              "domain": "gmail",
+              "toplevel": "com",
+              "subject": "Kontakt Responsive, Keepitnative-Website",
+              "body": "\r\n"
+          },
+
+      ];
+      //the ID's in your markup, you can use simple divs
+      //$('#email-address-myDomain-footer, #email-address-myDomain-contact, .foobar').mailtoobfuscate_my(options);
+  </script>
+</head>
+<body>
+  <div id="qunit"></div>
+  <div id="qunit-fixture">
+    <span>lame test markup</span>
+    <span>normal test markup</span>
+    <span>awesome test markup</span>
+
+      <span id="email-address-myDomain-footer"></span>
+      <span id="email-address-myDomain-contact"></span>
+      <span class="foobar"></span>
+  </div>
+</body>
+</html>

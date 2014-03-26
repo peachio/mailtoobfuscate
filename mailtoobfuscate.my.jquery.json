@@ -1,0 +1,26 @@
+{
+  "name": "mailtoobfuscate.my",
+  "title": "Mailtoobfuscate My",
+  "description": "JQuery mailto obfuscation",
+  "version": "0.1.0",
+  "homepage": "https://github.com/peachio/mailtoobfuscate",
+  "author": {
+    "name": "Peter Ruler",
+    "email": "7starch@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peachio/mailtoobfuscate.git"
+  },
+  "bugs": "https://github.com/peachio/mailtoobfuscate/issues",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/peachio/mailtoobfuscate/blob/master/LICENSE-MIT"
+    }
+  ],
+  "dependencies": {
+    "jquery": "1.11.0"
+  },
+  "keywords": []
+}
